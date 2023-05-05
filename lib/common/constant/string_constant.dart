@@ -30,4 +30,5 @@ Sumber : Espinoza dkk., 2020
   static const String profileHeightLabel = 'Tinggi Badan';
   static const String profileWeightLabel = 'Berat Badan';
   static const String profileDateOfBirthLabel = 'Tanggal Lahir';
+  static const String profileButton = 'Simpan';
 }
