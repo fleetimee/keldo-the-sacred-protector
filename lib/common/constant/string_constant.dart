@@ -11,7 +11,6 @@ class StringConstant {
   static const String homeStartQuiz = 'Mulai Quiz';
 
   // Quiz Constant
-
   static const String quizTitle = 'Quiz';
   static const String quizContentTitle = 'Umur';
   static const String quizContentProgress = '1/5';
@@ -22,4 +21,13 @@ Sumber : Espinoza dkk., 2020
   ''';
   static const String quizAnswer =
       'Usia saya saat ini lebih dari atau sama dengan 35 tahun';
+
+  // Profile Constant
+  static const String profileTitle = 'Data Profile';
+  static const String profileEmailLabel = 'Email';
+  static const String profileNameLabel = 'Nama';
+  static const String profileAgeLabel = 'Umur';
+  static const String profileHeightLabel = 'Tinggi Badan';
+  static const String profileWeightLabel = 'Berat Badan';
+  static const String profileDateOfBirthLabel = 'Tanggal Lahir';
 }
