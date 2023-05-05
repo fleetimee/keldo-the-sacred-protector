@@ -13,6 +13,7 @@ dependencies:
   flutter_form_builder: ^8.0.0
   form_builder_validators: ^8.6.1
   google_fonts: ^4.0.4
+  intl: ^0.17.0
   responsive_framework: ^1.0.0
   scaffold_gradient_background: ^1.0.3+1
 

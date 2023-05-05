@@ -1,9 +1,10 @@
 import 'package:fleetime_quiz/common/constant/string_constant.dart';
-import 'package:fleetime_quiz/ui/pages/profile/profile_ui.dart';
+import 'package:fleetime_quiz/ui/pages/profile/components/profile_ui_label.dart';
 import 'package:fleetime_quiz/ui/widget/input.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
+import 'package:intl/intl.dart';
 
 class ProfileForm extends StatelessWidget {
   const ProfileForm({
@@ -67,6 +68,32 @@ class ProfileForm extends StatelessWidget {
           ),
           const ProfileLabel(
             name: StringConstant.profileDateOfBirthLabel,
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 80,
+          ),
+          FormBuilderDateTimePicker(
+            name: 'date',
+            inputType: InputType.date,
+            enableInteractiveSelection: true,
+            initialDatePickerMode: DatePickerMode.day,
+            initialEntryMode: DatePickerEntryMode.calendarOnly,
+            style: const TextStyle(
+              color: Colors.black,
+              fontSize: 24,
+            ),
+            format: DateFormat('yyyy-MM-dd'),
+            validator: FormBuilderValidators.compose([
+              FormBuilderValidators.required(),
+            ]),
+            decoration: const InputDecoration(
+              hintText: '1999-12-31',
+              contentPadding: EdgeInsets.all(0),
+              hintStyle: TextStyle(
+                color: Colors.grey,
+                fontSize: 24,
+              ),
+            ),
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height / 36,
