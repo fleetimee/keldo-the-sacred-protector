@@ -23,7 +23,7 @@ Sumber : Espinoza dkk., 2020
       'Usia saya saat ini lebih dari atau sama dengan 35 tahun';
 
   // Profile Constant
-  static const String profileTitle = 'Data Profile';
+  static const String profileTitle = 'Data Profil';
   static const String profileEmailLabel = 'Email';
   static const String profileNameLabel = 'Nama';
   static const String profileAgeLabel = 'Umur';
