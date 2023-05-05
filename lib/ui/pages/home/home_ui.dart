@@ -1,5 +1,7 @@
 import 'package:fleetime_quiz/common/constant/string_constant.dart';
+import 'package:fleetime_quiz/ui/pages/home/components/home_ui_bottom_button.dart';
 import 'package:fleetime_quiz/ui/pages/home/components/home_ui_profile_card.dart';
+import 'package:fleetime_quiz/ui/pages/home/components/home_ui_top_button.dart';
 import 'package:flutter/material.dart';
 import 'package:scaffold_gradient_background/scaffold_gradient_background.dart';
 
@@ -48,10 +50,23 @@ class HomePage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          children: const [
-            HomeUserProfileCard(
+          children: [
+            const HomeUserProfileCard(
               name: StringConstant.homeName,
               imagePath: 'assets/images/home_avatar.jpg',
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height / 10,
+            ),
+            HomeTopButton(
+              name: StringConstant.homeHighRisk,
+              onPressed: () {},
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height / 15,
+            ),
+            const HomeBottomButton(
+              name: StringConstant.homeStartQuiz,
             ),
           ],
         ),

@@ -7,4 +7,6 @@ class StringConstant {
   // Home Constant
   static const String homeHello = 'Halo,';
   static const String homeName = 'Novian Andika';
+  static const String homeHighRisk = 'Risiko Tinggi';
+  static const String homeStartQuiz = 'Mulai Quiz';
 }
