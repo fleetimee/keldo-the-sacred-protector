@@ -34,14 +34,46 @@ class QuizTypeOnePage extends StatelessWidget {
           ),
           SizedBox(
             width: MediaQuery.of(context).size.width / 1.2,
-            child: Text(
-              StringConstant.quizContent,
-              style: TextStyle(
-                fontSize: MediaQuery.of(context).size.width / 24,
-                color: Colors.black,
-                height: 1.3,
+            height: MediaQuery.of(context).size.height / 5,
+            child: Scrollbar(
+              child: SingleChildScrollView(
+                child: Text(
+                  StringConstant.quizContent,
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.width / 24,
+                    color: Colors.black,
+                    height: 1.3,
+                  ),
+                  textAlign: TextAlign.justify,
+                ),
               ),
-              textAlign: TextAlign.justify,
+            ),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 36,
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width / 1.2,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  StringConstant.quizTitle,
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.width / 24,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  StringConstant.quizContentProgress,
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.width / 24,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
           ),
         ],
