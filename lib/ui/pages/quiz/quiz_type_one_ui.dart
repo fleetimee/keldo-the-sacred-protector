@@ -20,23 +20,34 @@ class QuizTypeOnePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const QuizImage(
-            imgPath: 'assets/images/quiz_placeholder.jpg',
-          ),
           SizedBox(
-            height: MediaQuery.of(context).size.height / 24,
-          ),
-          const QuizTitle(
-            title: StringConstant.quizContentTitle,
-          ),
-          SizedBox(
-            height: MediaQuery.of(context).size.height / 36,
-          ),
-          const QuizContent(
-            title: StringConstant.quizContent,
-          ),
-          SizedBox(
-            height: MediaQuery.of(context).size.height / 24,
+            height: MediaQuery.of(context).size.height / 1.75,
+            child: Scrollbar(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    const QuizImage(
+                      imgPath: 'assets/images/quiz_placeholder.jpg',
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height / 24,
+                    ),
+                    const QuizTitle(
+                      title: StringConstant.quizContentTitle,
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height / 36,
+                    ),
+                    const QuizContent(
+                      title: StringConstant.quizContent,
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height / 24,
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
           const QuizAnswer(
             quizAnswerTitle: StringConstant.quizTitle,

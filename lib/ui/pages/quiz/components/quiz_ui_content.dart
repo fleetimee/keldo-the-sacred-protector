@@ -12,19 +12,14 @@ class QuizContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: MediaQuery.of(context).size.width / 1.2,
-      height: MediaQuery.of(context).size.height / 5,
-      child: Scrollbar(
-        child: SingleChildScrollView(
-          child: Text(
-            title,
-            style: TextStyle(
-              fontSize: MediaQuery.of(context).size.width / 24,
-              color: Colors.black,
-              height: 1.3,
-            ),
-            textAlign: TextAlign.justify,
-          ),
+      child: Text(
+        title,
+        style: TextStyle(
+          fontSize: MediaQuery.of(context).size.width / 24,
+          color: Colors.black,
+          height: 1.3,
         ),
+        textAlign: TextAlign.justify,
       ),
     );
   }

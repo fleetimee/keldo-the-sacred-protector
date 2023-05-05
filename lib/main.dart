@@ -1,4 +1,4 @@
-import 'package:fleetime_quiz/ui/pages/profile/profile_ui.dart';
+import 'package:fleetime_quiz/ui/pages/quiz/quiz_type_one_ui.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -29,7 +29,7 @@ class MainApp extends StatelessWidget {
         textTheme: GoogleFonts.robotoTextTheme(),
         appBarStyle: FlexAppBarStyle.surface,
       ),
-      home: const ProfilePage(),
+      home: const QuizTypeOnePage(),
     );
   }
 }
