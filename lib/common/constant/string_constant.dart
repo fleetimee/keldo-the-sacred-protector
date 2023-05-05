@@ -16,9 +16,9 @@ class StringConstant {
   static const String quizContentTitle = 'Umur';
   static const String quizContentProgress = '1/5';
   static const String quizContent = '''
-  Usia hamil yang tidak beresiko yaitu antara 20-35 tahun. Rentang usia tersebut merupakan usia reproduktif yang aman untuk hamil karena komplikasi kehamilan yang sedikit. Usia >35 tahun telah terjadi perubahan fungsional dan struktural yang berperan pada perubahan tekanan darah, sehingga lebih rentan mengalami preeklampsi
+Usia hamil yang tidak beresiko yaitu antara 20-35 tahun. Rentang usia tersebut merupakan usia reproduktif yang aman untuk hamil karena komplikasi kehamilan yang sedikit. Usia >35 tahun telah terjadi perubahan fungsional dan struktural yang berperan pada perubahan tekanan darah, sehingga lebih rentan mengalami preeklampsi
 
-  Sumber : Espinoza dkk., 2020
+Sumber : Espinoza dkk., 2020
   ''';
   static const String quizAnswer =
       'Usia saya saat ini lebih dari atau sama dengan 35 tahun';
